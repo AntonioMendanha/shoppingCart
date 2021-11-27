@@ -2,6 +2,9 @@
 
 Projeto de entrega para a avaliação do módulo de Angular da formação WebFullStack ministrada pela LetsCode.
 
+## Veja o projeto funcionando
+`http://shopping-cart-inky.vercel.app/`
+
 >- ### Requisitos para avaliação do módulo
 >- Página de visualização de anúncio, com fotos, descrição, preço e possibilidade de adicionar no carrinho
 >- Página de "checkout" com os dados sumarizados do pedido(os itens adicionados) e o valor total
