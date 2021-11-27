@@ -27,6 +27,7 @@ Projeto de entrega para a avaliação do módulo de Angular da formação WebFul
 - [x] Criar o componente do checkout
 - [x] Criar rota para a lista de produtos
 - [x] Criar rota para os detalhes de cada produto
+- [ ] Criar botão de voltar para a lista
 - [x] Criar rota para o checkout
 - [x] Service - adicionar item
 - [ ] Service - remover item
