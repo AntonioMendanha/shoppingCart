@@ -24,6 +24,7 @@ export class CheckoutCartService {
   }
 
   getItems() {
+    alert(this.items)
     return this.items;
   }
 }

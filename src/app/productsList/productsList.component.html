@@ -1,24 +1,23 @@
 <div class="container indigo lighten-4">
   <h2 >Escolha um dos cursos</h2>
   <ul class="collection"
-  *ngFor="let product of productsList">
+    *ngFor="let product of productsList"
+  >
+    <li class="collection-item avatar blue lighten-5  ">
+      <div class="title">
+        <a
+          [title]="product.name + 'details'"
+          [routerLink]="['/products', product.id]"
+        >
+          <strong >{{ product.name }}</strong>
+          <i class="material-icons right">info_outline</i>
+        </a>
+      </div>
 
-  <li class="collection-item avatar blue lighten-5  ">
-    <span class="title">
-      <a 
-      [title]="product.name + 'details'"
-      [routerLink]="['/products', product.id]">
-      <strong>{{ product.name }}</strong>
-      <i class="material-icons">info_outline</i>
-    </a>
-    </span>
-
-    <p>
-      {{ product.description }} <br>
-        R$ {{ product.price }},00
-    </p>
-
-    <a href="#!" class="secondary-content"><i class="medium material-icons">add_circle</i></a>
-  </li>
-</ul>
+      <p>
+        {{ product.description }} <br>
+        {{ product.price | currency:"BRL"}}
+      </p>
+    </li>
+  </ul>
 </div>
