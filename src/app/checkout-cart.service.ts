@@ -7,24 +7,48 @@ import { Product } from './model/Product';
 export class CheckoutCartService {
 
   items: Product[] = [];
+  actualTotalOrder: number = 0;
 
   constructor() { }
 
   addItemToCart(product: Product){
     this.items.push(product);
+    let order = JSON.parse(localStorage.getItem("order") ?? "[]")
+    order.push(
+      {
+        name: product.name,
+        price: product.price
+      }
+      )
+    this.actualTotalOrder += product.price
+    localStorage.setItem("order", JSON.stringify(order))
+    return this.actualTotalOrder;
   }
 
-  removeItemToCart() {
-    
-  }
+  //removeItem() {  }
 
   clearCart() {
-    this.items = [];
-    return this.items
+    this.actualTotalOrder = 0;
+    return localStorage.clear();
   }
 
   getItems() {
-    alert(this.items)
-    return this.items;
+    let order: Product = JSON.parse(localStorage.getItem("order") ?? "[]") ;
+    return (
+      this.items,
+      order
+    );
+  }
+
+  loadFromLocalStorage(): string[] {
+    return JSON.parse(localStorage.getItem("order") ?? "[]");
+  }
+
+  loadToLocalStorage(order: Product) {
+    localStorage.setItem('order', JSON.stringify(order));
+  }
+
+  calculateTotalOrder(){
+    return this.actualTotalOrder
   }
 }

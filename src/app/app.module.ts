@@ -25,7 +25,7 @@ const appRoutes: Routes = [
     ProductsListComponent,
     NavBarComponent,
     CheckoutComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule,

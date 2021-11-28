@@ -25,12 +25,12 @@ Projeto de entrega para a avaliação do módulo de Angular da formação WebFul
 - [ ] Funcionalidades do botão carrinho
 - [x] Mostrar a lista dos produtos no Componente ProductsList
 - [x] Criar o botão de adicionar
-- [ ] Criar o botão de excluir 
+- [x] Criar o botão de remover item do carrinho
 - [x] Criar o botão de limpar o carrinho
 - [x] Criar o componente do checkout
 - [x] Criar rota para a lista de produtos
 - [x] Criar rota para os detalhes de cada produto
-- [ ] Criar botão de voltar para a lista
+- [x] Criar botão de voltar para a lista
 - [x] Criar rota para o checkout
 - [x] Service - adicionar item
 - [ ] Service - remover item
@@ -41,8 +41,10 @@ Projeto de entrega para a avaliação do módulo de Angular da formação WebFul
 - [ ] Remover item excluido da tela
 - [x] Botão limpar - limpar items do carrinho
 - [ ] Limpar a tela após abandonar carrinho
-- [ ] Salvar as quantidades escolhidas em LocalStorage
+- [x] Salvar as quantidades escolhidas em LocalStorage
 - [ ] Recuperar as quantidades escolhidas em LocalStorage
-- [ ] Mostrar os itens escolhidos no checkout
+- [x] Limpar o LocalStorage 
+- [x] Mostrar os itens escolhidos no checkout
 - [ ] Gerar um form para enviar o numero de Whastapp
-- [ ] Implantar o form
+- [ ] Implantar o form na hora de finalizar o pedido
+- [x] Mostrar o valor do carrinho

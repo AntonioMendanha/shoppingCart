@@ -6,20 +6,35 @@
       VOLTAR
   </button>
   
-  <div class="col s12 m7" *ngFor="let item of items">
+  <div class="col s12 m7" #actualItem *ngFor="let item of items">
       <div class="card horizontal">
         <div class="card-stacked">
           <div class="card-content">
             <p>{{ item.name }}</p>
           </div>
+
           <div class="card-action">
             {{ item.price | currency:"BRL" }}
           </div>
+
+          <button class="secondary-content"
+            (click)="removeItem()"
+          >
+            <i class="material-icons">remove</i>
+            Remover item
+          </button>
         </div>
       </div>
   </div>
 
-  <div class="container">
+  <div class="container card-panel">
+    <span class="left">Valor total do Pedido</span>
+    <span class="right">
+      {{ totalOrder | currency:"BRL"}}
+    </span>
+  </div>
+
+  <div class="container card-panel">
     <span>Abandonar carrinho</span>
     <button class="secondary-content"
       (click)="clearCart()"

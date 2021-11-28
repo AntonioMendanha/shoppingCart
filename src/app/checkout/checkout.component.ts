@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { CheckoutCartService } from '../checkout-cart.service';
-import { Product } from '../model/Product';
 
 @Component({
   selector: 'app-checkout',
@@ -10,7 +9,11 @@ import { Product } from '../model/Product';
 })
  export class CheckoutComponent implements OnInit {
 
-  items = this.checkoutCartService.getItems();
+  @Output() itemRemoved = new EventEmitter;
+  
+  items: any;
+  order: string[];
+  totalOrder: any;
 
   //Conferir implantação do forms
   userCheckoutForm: FormGroup;
@@ -19,15 +22,18 @@ import { Product } from '../model/Product';
       'username': new FormControl(null),
       'whatsapp': new FormControl(null),
     });
+    this.items = this.checkoutCartService.getItems();
+    this.order = this.checkoutCartService.loadFromLocalStorage();
    }
 
   ngOnInit(): void {
+    this.totalOrder = this.checkoutCartService.calculateTotalOrder();
     this.userCheckoutForm
   }
 
-  addItemToCart(product: Product) {
-    this.checkoutCartService.addItemToCart(product);
-    alert("Produto adicionado com sucesso ao carrinho")
+  removeItem(): void {
+//    this.itemRemoved.emit(this.orderItem);2:56
+    this.itemRemoved.emit(this.items);
   }
 
   clearCart() {
