@@ -30,26 +30,17 @@
   <div class="container card-panel">
     <span class="left">Valor total do Pedido</span>
     <span class="right">
-      {{ totalOrder | currency:"BRL"}}
+      {{ totalOrder | currency:"BRL" }}
     </span>
   </div>
-
-  <div class="container card-panel">
-    <span>Abandonar carrinho</span>
-    <button class="secondary-content"
-      (click)="clearCart()"
-    >
-      <i class="material-icons">cancel</i>
-    </button>
-  </div>
-</div>
-
-<!--
-  <div class="wrapper-checkout container">
-    <h1>Dados do comprador</h1>
+<!-- Início Formulário -->
+  <div class="wrapper-user-checkout container">
+    <h4>Dados do comprador</h4>
     <div class="row">
       <form class="input-field col s12"
-        [formGroup]="userCheckoutForm">
+        [formGroup]="userCheckoutForm"
+        (ngSubmit)="onSubmit()"
+        >
         <div class="form-group col s6">
           <i class="material-icons prefix">account_circle</i>
           <label for="username">Nome: </label>
@@ -70,18 +61,26 @@
             id="whatsapp"
             formControlName="whatsapp"
             >
--->
-  <!--Validator de quantidade de numeros-->
-<!--
         </div>
+  <!--Validator de quantidade de numeros-->
     
         <button 
           class="btn red accent-2"
           type="submit"
           >
-          Conferir pedido <i class="material-icons right">send</i>
+          Enviar Pedido <i class="material-icons right">send</i>
         </button>
       </form>
     </div>
   </div>
---->
+
+  <div class="container">
+    <button class="waves-effect waves-light btn"
+      (click)="clearCart()"
+    >
+      Abandonar carrinho
+      <i class="material-icons">cancel</i>
+    </button>
+  </div>
+</div>
+

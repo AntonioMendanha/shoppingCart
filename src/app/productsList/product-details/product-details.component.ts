@@ -29,7 +29,7 @@ export class ProductDetailsComponent implements OnInit {
 
   addItemToCart(product: Product) {
     this.checkoutCartService.addItemToCart(product);
-    alert('Item adicionado com sucesso')
+    alert('Item adicionado com sucesso');
   }
 
 }

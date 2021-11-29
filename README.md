@@ -22,7 +22,6 @@ Projeto de entrega para a avaliação do módulo de Angular da formação WebFul
 - [x] Criar uma lista de produtos
 - [x] Criação do componente cabeçalho
 - [x] Criar o botão de carrinho
-- [ ] Funcionalidades do botão carrinho
 - [x] Mostrar a lista dos produtos no Componente ProductsList
 - [x] Criar o botão de adicionar
 - [x] Criar o botão de remover item do carrinho
@@ -45,6 +44,6 @@ Projeto de entrega para a avaliação do módulo de Angular da formação WebFul
 - [ ] Recuperar as quantidades escolhidas em LocalStorage
 - [x] Limpar o LocalStorage 
 - [x] Mostrar os itens escolhidos no checkout
-- [ ] Gerar um form para enviar o numero de Whastapp
-- [ ] Implantar o form na hora de finalizar o pedido
+- [x] Gerar um form para fechar o pedido e enviar o numero de Whastapp
+- [x] Implantar o form na hora de finalizar o pedido
 - [x] Mostrar o valor do carrinho
