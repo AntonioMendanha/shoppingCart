@@ -76,8 +76,14 @@ Etapas concluídas:
 <div align="center"> 
   <h3> How to reach me </h3>
   <p> My native languague is portuguese, and I´m also speak English.</p>
-  <img height="30" width="40" alt="Antonio-Linkedin" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg">
-  <img height="30" width="40" alt="Antonio-twitter" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/twitter/twitter-original.svg">
+  <a href="https://www.linkedin.com/in/antoniomendanha/" target="blank">
+    <img height="30" width="40" alt="Antonio-Linkedin" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg">
+  </a>
+  <a href="https://www.twitter.com/antoniomendanha" target="blank">
+    <img height="30" width="40" alt="Antonio-twitter" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/twitter/twitter-original.svg">
+  </a>
   <span> And see my first website -></span>  
-  <img height="30" width="40" alt="Antonio-HTML" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> 
+  <a href="https://antoniomendanha.github.io" target="blank">
+    <img height="30" width="40" alt="Antonio-HTML" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  </a>
 </div>
